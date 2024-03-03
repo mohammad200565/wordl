@@ -1,7 +1,7 @@
 /*      start Generating The word           */
 
         let the_dictionary = Array(
-            "Judge" , "Pitch" , "Patch" , "Mouse"
+            "Judge" , "Mouse" , "alien" , "knife" , "night" , "write" , "eager" , "eagle" , "young" , "youth"
         );
         let Ran = Math.floor( Math.random() *the_dictionary.length);
         let the_word = the_dictionary[Ran];
@@ -56,10 +56,11 @@ document.addEventListener("click" , (e)=>{
         if(result || The_number_of_the_word==5) {
             let score = document.querySelector(".theScore")
             if(result)   score.innerHTML  = 'Congratulations!' ;
-            else        score.innerHTML = '<img src="images\\GameOver.png">';
-            score.innerHTML += '<div class="theWord">The word is ' + the_word.toLocaleUpperCase +'</div>';
+            else        score.innerHTML = '<img src="images\\GameOver.png" class="gameOver">';
+            score.innerHTML += '<div class="theWord">The word is ' + the_word.toLocaleUpperCase() +'</div>';
             score.style.display = "block";
             document.querySelector(".container").style.opacity = "0.6" ;
+            document.querySelector("*").style.cursor = "auto" ;
         }
         The_number_of_the_word++;
         The_number_of_the_letter = 1;

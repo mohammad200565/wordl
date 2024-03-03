@@ -127,15 +127,18 @@ body{
     .theScore {
         color: white;
         background-color: #d359f2;
-        padding: 50px;
-        font-size: 40px;
-        position: fixed;
-        width: 40%;
+        padding: 10px;
+        position: absolute;
+        width: 90%;
         top: 25%;
-        left: 30%;
+        left: 5%;
         border: 15px solid #8800aa;
         border-radius: 70px;
         display: none;
+    }
+    .gameOver{
+        width: 200px;
+        height: auto;
     }
 
 /*      end The Score     */
@@ -159,6 +162,16 @@ body{
         width: 60%;
         margin: 5px auto;
     }
+    .words .attempt {
+        height: 60px;
+    }
+    .logo{
+        width: 175px;
+    }
+    .theScore{
+        width: 50%;
+        left: 25%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -180,10 +193,15 @@ body{
         width: 56%;
         float: left;
         margin: 15px;
-        margin-top: 40px;
+        margin-top: 60px;
+    }
+    .words .attempt {
+        height: 65px;
+    }
+    .gameOver{
+        width: 350px;
     }
 }
 
 /*_______________________________________________*/
-
 
