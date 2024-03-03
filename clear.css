@@ -1,0 +1,8 @@
+div , p , span{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearify{
+    clear: both;
+}

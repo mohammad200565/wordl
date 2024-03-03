@@ -1,0 +1,189 @@
+
+:root{
+    --CP : #0f0;    /* correct position */
+    --WP : #00f;     /* wrong position */
+    --DE : #f00;   /* doesn't exist */
+    --BCP : #090;    /* correct position */
+    --BWP : #009;     /* wrong position */
+    --BDE : #900;   /* doesn't exist */
+}
+
+@font-face { font-family: MAIN; src: url("Fonts\\madimione-regular.ttf");}
+
+*{
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 1px auto;
+}
+
+body{
+    font-family: MAIN;
+    font-size: 15px;
+    text-align: center;
+}
+
+.container{
+    /*padding: 0px 5px;*/
+    max-width: 992px;
+    margin: 0px auto;
+}
+
+/*      start words         */
+    .words {
+        padding: 5px;
+        border-radius: 10%;
+        width: 100%;
+    }
+
+    .words .attempt {
+        height: 50px;
+        display: flex;
+    }
+
+    .words .attempt .oneLetter {
+        color: white;
+        margin: 5px 2px;
+        padding: 8px;
+        background-color: #d359f2;
+        border-radius: 10px 10px 0px 0px;
+        text-align: center;
+        border-bottom: 6px solid #8800aa;
+        flex: 1;
+    }
+
+/*      end words           */
+
+/*      start controls      */
+    .controls{
+        border-radius: 20px;
+        width: 100%;
+        background-color: #ccc;
+        padding: 10px;
+    }
+
+    .keysColor{
+        overflow: hidden;
+    }
+    .keys{float: left;width: 83%;}
+    .colors .color{
+        margin: 15px 10px;
+        width: 32px;
+        height: 32px;
+        border-radius: 20px;
+    }
+    .colors {
+        width: 17%;
+        float: left;
+        :nth-child(1){background-color: var(--CP);border: 3px solid var(--BCP); }
+        :nth-child(2){background-color: var(--WP);border: 3px solid var(--BWP); }
+        :nth-child(3){background-color: var(--DE);border: 3px solid var(--BDE); }
+    }
+    .key{
+        margin: 15px 10px;
+        height: 32px;
+        padding: 5px 5px;
+        text-align: left;
+        text-wrap: wrap;
+    }
+    
+/*      end controls      */
+
+/*      start letters       */
+    .letters {
+        margin: 10px 0px;
+        padding: 5px;
+        background-color: #ccc;
+        border-radius: 20px;
+        flex:2;
+    }
+
+    .letters .letterButtom:hover , .submit:hover ,
+    .letters .delete:hover{opacity: 0.6;}
+
+    .letters .delete , .letters .submit , 
+    .letters .letterButtom {
+        background-color: #00f;
+        cursor: pointer;
+        color: #FFF;
+        padding: 6px 9px;
+        margin: 4px;
+        border-radius: 20px;
+
+        display: inline-block;
+    }
+
+    .letters .submit {
+        background-color: rgb(0, 189, 189);
+        color: black;
+    }
+
+/*      end letters         */
+
+/*      start The Score     */
+    .theScore {
+        color: white;
+        background-color: #d359f2;
+        padding: 50px;
+        font-size: 40px;
+        position: fixed;
+        width: 40%;
+        top: 25%;
+        left: 30%;
+        border: 15px solid #8800aa;
+        border-radius: 70px;
+        display: none;
+    }
+
+/*      end The Score     */
+
+/*      media quries      */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        font-size: 20px;
+    }
+    .letters .delete , .letters .submit , 
+    .letters .letterButtom {
+        padding: 10px 15px;
+    }
+    .words {
+        width: 60%;
+        margin: 0px auto;
+    }
+    .controls{
+        width: 60%;
+        margin: 5px auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        font-size: 22px;
+    }
+    .letters .delete , .letters .submit , 
+    .letters .letterButtom {
+        padding: 15px 25px;
+    }
+    .words {
+        width: 40%;
+        float: left;
+    }
+    /*.keys{width: 85%;}
+    .colors{width: 10%;}*/
+    .controls{
+        width: 56%;
+        float: left;
+        margin: 15px;
+        margin-top: 40px;
+    }
+}
+
+/*_______________________________________________*/
+
+
