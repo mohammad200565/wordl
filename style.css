@@ -93,7 +93,7 @@ body{
 /*      end controls      */
 
 /*      start letters       */
-    .letters {
+    .keyboard {
         margin: 10px 0px;
         padding: 5px;
         background-color: #ccc;
@@ -109,8 +109,8 @@ body{
         background-color: #00f;
         cursor: pointer;
         color: #FFF;
-        padding: 6px 9px;
-        margin: 4px;
+        padding: 4px 7px;
+        margin: 2px;
         border-radius: 20px;
 
         display: inline-block;
@@ -121,6 +121,12 @@ body{
         color: black;
     }
 
+    .p1 {
+        display: block;
+    }
+    .p2 {
+        display: none;
+    }
 /*      end letters         */
 
 /*      start The Score     */
@@ -140,6 +146,17 @@ body{
         width: 200px;
         height: auto;
     }
+    .playAgain{
+        padding: 10px;
+        background-color: #ff0;
+        border: solid 3px #aa0;
+        border-radius: 25px;
+        width: 60%;
+        color: black;
+        cursor: pointer;
+        margin: auto;
+    }
+    .playAgain:hover {opacity: 0.6;}
 
 /*      end The Score     */
 
@@ -172,6 +189,12 @@ body{
         width: 50%;
         left: 25%;
     }
+    .p1 {
+        display: none;
+    }
+    .p2 {
+        display: block;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -201,6 +224,7 @@ body{
     .gameOver{
         width: 350px;
     }
+
 }
 
 /*_______________________________________________*/
